@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de jogadores</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de jogadores do XV</h1>
+    </header>
+    <section id="escalar">
+        <h2>Escalar jogadores</h2>
+        <p>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome">
+            <label for="posicao">Posição: </label>
+            <input type="text" name="posicao" id="posicao" placeholder="EX: Atacante">
+            <label for="numero">Numero do jogador: </label>
+            <input type="text" name="numero" id="numero">
+            <button onclick="add_player()">Escalar jogador</button>
+        </p>
+    </section>
+    <section id="remover">
+        <p>
+            <h2>Remover da escalação</h2>
+            <label for="numero_remover">Numero jogador: </label>
+            <input type="text" name="numero_remover" id="numero_remover">
+            <button onclick="remove_player()">Remover jogador</button>
+        </p>
+    </section>
+    <section id="time">
+        <h2>Escalação: </h2>
+        <ul id="lista_escalados">
+
+        </ul>
+    </section>
+    <script src="/Lista_jogadores_com_DOM_EX011/scriprt.js"></script>
+</body>
+</html>
