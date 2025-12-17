@@ -1,0 +1,85 @@
+body{
+    background-color: var(--bg-color);
+    color: var(--letter-color);
+    font-family: sans-serif;
+}
+
+:root{
+    --letterGame-color: #1f0909;
+    --bg-color: #232323;
+    --letter-color: #f0f2f3;
+    --hover-color: #c2c2c2;
+    --bgGame-color: #949494;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+input{
+    width: 10rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    border-radius: 1rem;
+    padding: .4rem;
+    font-size: 1.2;
+    font-weight: 500;
+}
+
+.player {
+    font-size: 1.5rem;
+    margin: auto;
+    margin-left: 1rem;
+    margin-right: .5rem;
+    font-weight: 700;
+}
+
+.btn{
+    padding: .4rem;
+    border-radius: 1rem;
+    margin: auto;
+    width: 8rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--hover-color);
+}
+
+h2 {
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+#gameBoard {
+    background-color: var();
+    display: grid;
+    grid-template-columns: 7rem 7rem 7rem;
+    grid-template-rows: 7rem 7rem 7rem;
+    gap: .5rem;
+    margin-bottom: 1.3rem;
+    max-width: 22rem;
+    margin: 0 auto;
+}
+
+#gameBoard span {
+    background-color: var(--bgGame-color);
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+    color: var(--letterGame-color);
+}
+
+#gameBoard span.win {
+    background-color: #3cca9b;
+    color: #f0f2f3;
+}
+
+#gameBoard span:hover{
+    background-color: var(--hover-color);
+}
