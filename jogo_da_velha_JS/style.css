@@ -27,6 +27,19 @@ input{
     font-weight: 500;
 }
 
+p,
+p span{
+    font-size: 1.5rem;
+    margin: auto;
+    margin-left: 1rem;
+    margin-right: .5rem;
+    font-weight: 700;
+}
+
+p{
+    margin-top: 1rem;
+}
+
 .player {
     font-size: 1.5rem;
     margin: auto;
@@ -73,11 +86,6 @@ h2 {
     place-content: center;
     font-size: 5rem;
     color: var(--letterGame-color);
-}
-
-#gameBoard span.win {
-    background-color: #3cca9b;
-    color: #f0f2f3;
 }
 
 #gameBoard span:hover{
